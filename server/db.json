@@ -1,0 +1,27 @@
+{
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Сергей Антонов",
+      "specialization": "Стоматолог"
+    },
+    {
+      "id": "2",
+      "name": "Елена Коршункова",
+      "specialization": "Терапевт"
+    }
+  ],
+  "appointments": [],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "2",
+      "username": "doctor",
+      "password": "12345"
+    }
+  ]
+}
