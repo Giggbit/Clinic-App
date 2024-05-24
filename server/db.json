@@ -1,14 +1,94 @@
 {
   "doctors": [
     {
-      "id": "1",
-      "name": "Сергей Антонов",
-      "specialization": "Стоматолог"
+      "id": "3f2e54d9-6374-40af-9dc6-7858a4ec6e12",
+      "name": "Иван Иванов",
+      "specialization": "Хирург"
     },
     {
-      "id": "2",
-      "name": "Елена Коршункова",
-      "specialization": "Терапевт"
+      "id": "4a6a971c-4b6d-4a5e-b481-d8de20fa4f28",
+      "name": "Мария Петрова",
+      "specialization": "Кардиолог"
+    },
+    {
+      "id": "5e6a6d1b-7d98-468b-8659-9c1e1e22b8a8",
+      "name": "Алексей Смирнов",
+      "specialization": "Невролог"
+    },
+    {
+      "id": "6c0dbed2-d9f4-47bb-9f19-5096f1ec9cb6",
+      "name": "Ольга Сидорова",
+      "specialization": "Гинеколог"
+    },
+    {
+      "id": "7e1b7c7e-6df9-4b9e-92e1-8d3a50f9bb58",
+      "name": "Дмитрий Кузнецов",
+      "specialization": "Уролог"
+    },
+    {
+      "id": "8b0c7b1e-1e4b-48e8-898f-4b2a776f4e42",
+      "name": "Татьяна Морозова",
+      "specialization": "Эндокринолог"
+    },
+    {
+      "id": "9d3f9a7b-6818-4b92-9881-f6b5a8c79f58",
+      "name": "Николай Соколов",
+      "specialization": "Офтальмолог"
+    },
+    {
+      "id": "10a8f2b6-59b1-41c2-8467-3c2c5d8b8ef8",
+      "name": "Светлана Михайлова",
+      "specialization": "Педиатр"
+    },
+    {
+      "id": "11e8f0d3-7071-4c6d-8f0b-7e6c8b0d8f5e",
+      "name": "Владимир Новиков",
+      "specialization": "Психиатр"
+    },
+    {
+      "id": "12b2e7d1-85f2-42d8-b0c9-9a2d5f9d2f9e",
+      "name": "Анна Федорова",
+      "specialization": "Дерматолог"
+    },
+    {
+      "id": "13d6a7e5-8e7b-41c8-bf7b-9b7f2a7f5c2d",
+      "name": "Максим Васильев",
+      "specialization": "Травматолог"
+    },
+    {
+      "id": "14b4e8d2-9e2b-4e6b-8b8b-7e4c2f8c6d9a",
+      "name": "Наталья Зайцева",
+      "specialization": "Аллерголог"
+    },
+    {
+      "id": "15e8c7a4-2f1c-4b8a-8e5d-3c7e5b6f7d8a",
+      "name": "Андрей Павлов",
+      "specialization": "Онколог"
+    },
+    {
+      "id": "16d2b5f1-3b8a-4f1b-8e2d-9b5e6a7d9f8a",
+      "name": "Юлия Семенова",
+      "specialization": "Гастроэнтеролог"
+    },
+    {
+      "id": "17b6e8a4-4e1a-4e6b-8b3d-6e7b8a6c7f8b",
+      "name": "Виктория Лебедева",
+      "specialization": "Ревматолог"
+    },
+    {
+      "id": "18e9b7c2-5f1d-4e9a-8b7e-5b7e8d9c6a7b",
+      "name": "Георгий Ефимов",
+      "specialization": "Пульмонолог"
+    },
+    {
+      "id": "19b4d8a1-6e3c-4e2a-8b9d-4a6b7e8c5d9f",
+      "name": "Александра Попова",
+      "specialization": "Нефролог"
+    },
+    {
+      "id": "20e5b6a3-7f1b-4e6a-8b4d-9c7a8b5d6e7f",
+      "name": "Кирилл Киселев",
+      "specialization": "Иммунолог"
     }
   ],
   "appointments": [],
@@ -19,9 +99,22 @@
       "password": "admin"
     },
     {
-      "id": "2",
-      "username": "doctor",
-      "password": "12345"
+      "id": "96964ef8-8c93-4514-93cc-93559c528b66",
+      "username": "gigg",
+      "email": "danya19981017@gmail.com",
+      "password": "12345",
+      "gender": "male",
+      "birthYear": "2024-05-26"
+    },
+    {
+      "id": "1e8544e6-f5f6-4105-beb9-3c9703930c70",
+      "firstName": "Даниил",
+      "lastName": "Костанда",
+      "username": "d_kostanda",
+      "email": "danya19981017@gmail.com",
+      "password": "12345",
+      "gender": "other",
+      "birthYear": "2024-05-03"
     }
   ]
 }
