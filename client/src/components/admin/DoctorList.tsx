@@ -22,7 +22,7 @@ function DoctorList() {
     return (
         <div>
             <h2 className="text-center">Список врачей</h2>
-            <table className="table table-hover mt-4">
+            <table className="table table-hover mt-5">
                 <thead>
                     <tr>
                         <th scope="col">Id</th>

@@ -8,6 +8,7 @@ interface LoginFormProps {
         username: string,
         firstName: string,
         lastName: string,
+        password: string,
         email: string,
         gender: string,
         birthYear: string,
@@ -39,28 +40,27 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
   };
 
   return (
-    <>
-    <a href="/register">Still don't have an account? Register here!</a>
-    
-    <form className="form mt-3" onSubmit={handleLogin}>
-        <div className="col-4">
-          <div className="input-group mb-3">
-            <label className="input-group-text" htmlFor="username">Login:</label>
-            <input className="form-control" type="text" id="username" value={username}
-              onChange={(e) => setUsername(e.target.value)} />
-          </div>
-        </div>
+    <>    
+    <div className="row justify-content-center">
+      <div className="col-4 mt-4">
+        <a href="/register">Still don't have an account? Register here!</a>
 
-        <div className="col-4">
-          <div className="input-group mb-3">
-            <label className="input-group-text" htmlFor="password">Password:</label>
-            <input className="form-control" type="password" id="password" value={password}
-              onChange={(e) => setPassword(e.target.value)} />
-          </div>
-        </div>
-        {error && <p className="text-danger">{error}</p>}
-        <button className="btn btn-primary" type="submit">Войти</button>
-      </form>
+        <form className="form mt-3" onSubmit={handleLogin}>
+            <div className="input-group mb-3">
+              <label className="input-group-text" htmlFor="username">Login:</label>
+              <input className="form-control" type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
+            </div>
+    
+            <div className="input-group mb-3">
+              <label className="input-group-text" htmlFor="password">Password:</label>
+              <input className="form-control" type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            </div>
+    
+            {error && <p className="text-danger">{error}</p>}
+            <button className="btn btn-primary" type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
     </>
   );
 };

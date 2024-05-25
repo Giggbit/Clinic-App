@@ -99,22 +99,14 @@
       "password": "admin"
     },
     {
-      "id": "96964ef8-8c93-4514-93cc-93559c528b66",
-      "username": "gigg",
-      "email": "danya19981017@gmail.com",
-      "password": "12345",
-      "gender": "male",
-      "birthYear": "2024-05-26"
-    },
-    {
+      "firstName": "Сергей",
+      "lastName": "Иванов",
+      "email": "s_ivanov@gmail.com",
+      "gender": "Male",
+      "birthYear": "1992-05-12",
       "id": "1e8544e6-f5f6-4105-beb9-3c9703930c70",
-      "firstName": "Даниил",
-      "lastName": "Костанда",
-      "username": "d_kostanda",
-      "email": "danya19981017@gmail.com",
-      "password": "12345",
-      "gender": "other",
-      "birthYear": "2024-05-03"
+      "username": "ivanov",
+      "password": "12345"
     }
   ]
 }
