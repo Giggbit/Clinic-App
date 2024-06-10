@@ -1,7 +1,13 @@
+import MedicalFieldsList from "./medical/MedicalFieldsList";
+
 export default function Home() {
     return (
         <>
-            <h2>Welcome!</h2>
+            <div className="row justify-content-center mt-5">
+                <div className="col-11">
+                    <MedicalFieldsList/>
+                </div>
+            </div>
         </>
     );
 }

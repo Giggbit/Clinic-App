@@ -15,6 +15,9 @@ import UserProfile from './components/user/UserProfile';
 import UserData from './components/user/UserData';
 import UsersList from './components/admin/UsersList';
 import EditUserData from './components/user/EditUserData';
+import AppointmentScheduler from './components/medical/AppointmentScheduler';
+import MedicalFieldsList from './components/medical/MedicalFieldsList';
+import UserAppointments from './components/user/UserAppointments';
 
 const AppContent: React.FC = () => {
   const [user, setUser] = useState<IUser | null>(null);
@@ -52,11 +55,14 @@ const AppContent: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/doctors" element={<DoctorList />} />
           <Route path="/login" element={<LoginForm onLogin={handleLogin} />} />
-          <Route path='/register' element={<RegisterForm />} />
-          <Route path='/user-profile' element={<UserProfile />} />
-          <Route path='/user/data' element={<UserData userId={user?.id} />} />
-          <Route path='/user/edit-data' element={<EditUserData userId={user?.id}/>} />
-          {user && user.username === 'admin' && (
+          <Route path="/register" element={<RegisterForm />} />
+          <Route path="/user-profile" element={<UserProfile />} />
+          <Route path="/user/data" element={<UserData userId={user?.id ?? ""} />} />
+          <Route path="/user/edit-data" element={<EditUserData userId={user?.id}/>} />
+          <Route path="/appointment-scheduler/:fieldId" element={<AppointmentScheduler user={user} />} />
+          <Route path="/user-profile/appointments" element={<UserAppointments user={user}/>} />
+          <Route path="/medical-fields" element={<MedicalFieldsList />} />
+          {user && user.username === "admin" && (
             <>
               <Route path="/admin" element={<AdminMenu />} />
               <Route path="/admin/users" element={<UsersList />} />

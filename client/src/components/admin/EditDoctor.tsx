@@ -37,7 +37,8 @@ const EditDoctor: React.FC = () => {
       setName('');
       setSpecialization('');
       setDoctorFound(false);
-    } catch (error) {
+    } 
+    catch (error) {
       setError('Ошибка при обновлении данных врача');
     }
   };
@@ -48,13 +49,7 @@ const EditDoctor: React.FC = () => {
       <form className="mt-4" onSubmit={handleFindDoctor}>
         <div className="mb-3">
           <label className="form-label">ID врача</label>
-          <input
-            type="text"
-            className="form-control"
-            value={id}
-            onChange={(e) => setId(e.target.value)}
-            required
-          />
+          <input type="text" className="form-control" value={id} onChange={(e) => setId(e.target.value)}required/>
         </div>
         <button type="submit" className="btn btn-primary">Найти</button>
       </form>
@@ -64,23 +59,11 @@ const EditDoctor: React.FC = () => {
         <form className='mt-5' onSubmit={handleUpdateDoctor}>
           <div className="mb-3">
             <label className="form-label">Имя</label>
-            <input
-              type="text"
-              className="form-control"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
+            <input type="text" className="form-control" value={name} onChange={(e) => setName(e.target.value)} required/>
           </div>
           <div className="mb-3">
             <label className="form-label">Специализация</label>
-            <input
-              type="text"
-              className="form-control"
-              value={specialization}
-              onChange={(e) => setSpecialization(e.target.value)}
-              required
-            />
+            <input type="text" className="form-control" value={specialization} onChange={(e) => setSpecialization(e.target.value)} required/>
           </div>
           <button type="submit" className="btn btn-success">Обновить</button>
         </form>

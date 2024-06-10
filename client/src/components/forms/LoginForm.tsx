@@ -31,10 +31,12 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
       if (user) {
         onLogin(user);
         navigate('/');
-      } else {
+      } 
+      else {
         setError('Неправильный логин или пароль');
       }
-    } catch (error) {
+    } 
+    catch (error) {
       setError('Ошибка сервера');
     }
   };

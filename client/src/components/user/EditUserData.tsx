@@ -29,7 +29,8 @@ const EditUserProfile: React.FC<EditUserProfileProps> = ({ userId }) => {
         setEmail(user.email);
         setGender(user.gender);
         setBirthYear(user.birthYear);
-      } catch (error) {
+      } 
+      catch (error) {
         setError('Ошибка при загрузке данных пользователя');
       }
     };
@@ -50,7 +51,8 @@ const EditUserProfile: React.FC<EditUserProfileProps> = ({ userId }) => {
         birthYear,
       });
       setSuccess('Данные успешно обновлены');
-    } catch (error) {
+    } 
+    catch (error) {
       setError('Ошибка при обновлении данных пользователя');
     }
   };

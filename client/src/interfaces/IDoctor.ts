@@ -1,7 +1,6 @@
-interface IDoctor {
-    id: number;
+export default interface IDoctor {
+    id: string;
     name: string;
     specialization: string;
+    fieldId: string;
 }
-
-export default IDoctor;

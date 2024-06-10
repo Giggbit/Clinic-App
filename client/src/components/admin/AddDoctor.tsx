@@ -19,7 +19,8 @@ const AddDoctor: React.FC = () => {
     try {
       await axios.post('http://localhost:3000/doctors', newDoctor);
       navigate('/admin/doctors');
-    } catch (error) {
+    } 
+    catch (error) {
       console.error('Ошибка при добавлении врача:', error);
     }
   };

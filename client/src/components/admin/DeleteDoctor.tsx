@@ -12,7 +12,8 @@ const DeleteDoctor: React.FC = () => {
       await axios.delete(`http://localhost:3000/doctors/${id}`);
       alert('Данные врача успешно удалены');
       navigate('/admin/doctors');
-    } catch (error) {
+    } 
+    catch (error) {
       console.error('Ошибка при удалении врача:', error);
     }
   };
